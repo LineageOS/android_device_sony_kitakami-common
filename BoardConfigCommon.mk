@@ -46,6 +46,9 @@ TARGET_USES_64_BIT_BCMDHD := true
 
 ENABLE_CPUSETS := true
 
+# Assert
+TARGET_BOARD_INFO_FILE ?= $(COMMON_PATH)/board-info.txt
+
 # Boot image/kernel
 BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x237 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 boot_cpus=0-5 dwc3_msm.hvdcp_max_current=1500 dwc3_msm.prop_chg_detect=Y coherent_pool=2M androidboot.selinux=enforcing
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
@@ -124,6 +127,10 @@ BOARD_USES_QCOM_HARDWARE := true
 # Recovery
 TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/fstab.qcom
 TARGET_USERIMAGES_USE_EXT4 := true
+
+# Releasetools
+TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_kitakami
+TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 
 # RIL
 BOARD_PROVIDES_LIBRIL := true
