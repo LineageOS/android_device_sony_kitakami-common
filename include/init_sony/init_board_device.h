@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2016 The CyanogenMod Project
+ *           (C) 2016 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -20,51 +21,69 @@
 #include "init_board_common.h"
 #include "init_prototypes.h"
 
-// Constants: devices controls
-#define DEV_BLOCK_FOTA_NUM 32
-#define DEV_BLOCK_MAJOR 259
+#define LED_RED_PATH "/sys/class/leds/led:rgb_red/brightness"
+#define LED_GREEN_PATH "/sys/class/leds/led:rgb_green/brightness"
+#define LED_BLUE_PATH "/sys/class/leds/led:rgb_blue/brightness"
+#define VIBRATOR_PATH "/sys/class/timed_output/vibrator/enable"
 
 // Class: init_board_device
 class init_board_device : public init_board_common
 {
 public:
-    // Board: introduction for keycheck
+    // Board: Introduction for Keycheck
     virtual void introduce_keycheck()
     {
         // Short vibration
-        vibrate(100);
+        vibrate(75);
 
-        // LED boot selection colors
+        // LED purple
         led_color(255, 0, 255);
     }
 
-    // Board: introduction for Recovery
-    virtual void introduce_recovery()
+    // Board: finalization of keycheck
+    virtual void finish_keycheck(bool recoveryBoot)
     {
-        // Trigger vibration
-        vibrate(100);
+        // Short vibration
+        if (recoveryBoot)
+        {
+            vibrate(75);
+            msleep(75);
+        }
     }
 
-    // Board: finish init execution
+    // Board: Introduction for Android
+    virtual void introduce_android()
+    {
+        // LED off
+        led_color(0, 0, 0);
+    }
+
+    // Board: Introduction for Recovery
+    virtual void introduce_recovery()
+    {
+        // LED orange
+        led_color(255, 100, 0);
+    }
+
+    // Board: Finish init execution
     virtual void finish_init()
     {
-        // Power off LED and vibrator
-        led_color(0, 0, 0);
+        // Power off vibrator
         vibrate(0);
     }
 
-    // Board: set led colors
-    void led_color(uint8_t r, uint8_t g, uint8_t b)
+    // Board: Set LED colors
+    void led_color(uint8_t red, uint8_t green, uint8_t blue)
     {
-        write_int("/sys/class/leds/led:rgb_red/brightness", r);
-        write_int("/sys/class/leds/led:rgb_green/brightness", g);
-        write_int("/sys/class/leds/led:rgb_blue/brightness", b);
+        write_int(LED_RED_PATH, red);
+        write_int(LED_GREEN_PATH, green);
+        write_int(LED_BLUE_PATH, blue);
     }
 
-    // Board: set hardware vibrator
+    // Board: Set hardware vibrator
     void vibrate(uint8_t strength)
     {
-        write_int("/sys/class/timed_output/vibrator/enable", strength);
+        write_int(VIBRATOR_PATH, strength);
     }
 };
 
