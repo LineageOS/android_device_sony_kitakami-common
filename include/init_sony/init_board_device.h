@@ -22,7 +22,8 @@
 
 // Constants: devices controls
 #define DEV_BLOCK_FOTA_NUM 32
-#define DEV_BLOCK_MAJOR 259
+#define DEV_BLOCK_FOTA_MAJOR 259
+#define DEV_BLOCK_FOTA_MINOR 0
 
 // Class: init_board_device
 class init_board_device : public init_board_common
@@ -41,24 +42,23 @@ public:
     // Board: introduction for Recovery
     virtual void introduce_recovery()
     {
-        // Trigger vibration
-        vibrate(100);
+        // LED Recovery colors
+        led_color(255, 100, 0);
     }
 
-    // Board: finish init execution
+    // Board: Finish init
     virtual void finish_init()
     {
-        // Power off LED and vibrator
+        // Power off LED
         led_color(0, 0, 0);
-        vibrate(0);
     }
 
     // Board: set led colors
     void led_color(uint8_t r, uint8_t g, uint8_t b)
     {
-        write_int("/sys/class/leds/led:rgb_red/brightness", r);
-        write_int("/sys/class/leds/led:rgb_green/brightness", g);
-        write_int("/sys/class/leds/led:rgb_blue/brightness", b);
+        write_int("/sys/class/leds/red/brightness", r);
+        write_int("/sys/class/leds/green/brightness", g);
+        write_int("/sys/class/leds/blue/brightness", b);
     }
 
     // Board: set hardware vibrator
