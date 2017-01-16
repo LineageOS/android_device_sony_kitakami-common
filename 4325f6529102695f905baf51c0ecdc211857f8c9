@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ba3e81b7_7fee5b8d",
+        "filename": "include/init_sony/init_board_device.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 2195
+      },
+      "writtenOn": "2017-01-16T16:50:14Z",
+      "side": 1,
+      "message": "This might differ across devices, need to check.",
+      "revId": "4325f6529102695f905baf51c0ecdc211857f8c9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
