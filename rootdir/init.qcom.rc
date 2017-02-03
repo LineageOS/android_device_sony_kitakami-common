@@ -45,8 +45,6 @@ on init
     mkdir /firmware 0771 system system
     mkdir /persist 0771 system system
     mkdir /persist/data 0700 system system
-    mkdir /idd 0751 idd idd
-    mkdir /rca 0750 idd idd
 
     wait /dev/block/mmcblk0p1
     chown tad tad /dev/block/mmcblk0p1
@@ -77,15 +75,6 @@ on fs
     mount_all fstab.qcom
     # Threshold for cma page reclaim
     write /proc/sys/vm/swap_thresh_cma_free_pages 7680
-
-    chown idd idd /idd
-    chmod 0751 /iddA
-    exec /system/bin/rm -r /idd/lost+found
-    symlink /idd /mnt/idd
-    chown idd idd /rca
-    chmod 0750 /rca
-    exec /system/bin/rm -r /rca/lost+found
-    symlink /rca /mnt/rca
 
 on boot
 
@@ -240,15 +229,6 @@ on post-fs
 on post-fs-data
     #Secd
     mkdir /data/credmgr 0770 system credmgr_client
-
-    mkdir /idd/lost+found 0770 root root
-    mkdir /idd/output 0755 idd idd
-    mkdir /idd/socket 0711 idd idd
-    mkdir /idd/startup-prober 0700 root root
-
-    restorecon_recursive /idd
-    mkdir /rca/plugins 0750 idd idd
-    restorecon_recursive /rca
 
     # KSM options
     write /sys/kernel/mm/ksm/pages_to_scan 100
@@ -665,11 +645,6 @@ service secd /system/bin/secd
     socket secd_ebl_sock stream 0660 system credmgr_client
     socket secd_devsec_sock stream 0660 system credmgr_client
     socket secd_credmgr_sock stream 0660 system credmgr_client
-
-service iddd /system/bin/iddd
-    class core
-    user idd
-    group idd log inet trimarea
 
 # Redefined Service
 service audioserver /system/bin/audioserver
