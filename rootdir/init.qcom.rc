@@ -46,7 +46,6 @@ on init
     mkdir /persist 0771 system system
     mkdir /persist/data 0700 system system
     mkdir /idd 0751 idd idd
-    mkdir /rca 0750 idd idd
 
     wait /dev/block/mmcblk0p1
     chown tad tad /dev/block/mmcblk0p1
@@ -79,13 +78,8 @@ on fs
     write /proc/sys/vm/swap_thresh_cma_free_pages 7680
 
     chown idd idd /idd
-    chmod 0751 /iddA
-    exec /system/bin/rm -r /idd/lost+found
+    chmod 0751 /idd
     symlink /idd /mnt/idd
-    chown idd idd /rca
-    chmod 0750 /rca
-    exec /system/bin/rm -r /rca/lost+found
-    symlink /rca /mnt/rca
 
 on boot
 
@@ -247,8 +241,6 @@ on post-fs-data
     mkdir /idd/startup-prober 0700 root root
 
     restorecon_recursive /idd
-    mkdir /rca/plugins 0750 idd idd
-    restorecon_recursive /rca
 
     # KSM options
     write /sys/kernel/mm/ksm/pages_to_scan 100
