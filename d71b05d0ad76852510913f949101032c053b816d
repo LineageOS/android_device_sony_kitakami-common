@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7a288981_1fcaac4f",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 101,
+      "author": {
+        "id": 19
+      },
+      "writtenOn": "2017-02-08T08:00:46Z",
+      "side": 1,
+      "message": "why f2fs? we dont have support for it in kernel",
+      "range": {
+        "startLine": 101,
+        "startChar": 0,
+        "endLine": 101,
+        "endChar": 26
+      },
+      "revId": "d71b05d0ad76852510913f949101032c053b816d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
