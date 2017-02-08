@@ -69,6 +69,30 @@
       "revId": "5bbb768dd62000aefb7995b4ba06ae508758b997",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a288981_dce30f32",
+        "filename": "libshim/camera.qcom_shim.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 14719
+      },
+      "writtenOn": "2017-02-08T18:14:41Z",
+      "side": 1,
+      "message": "You can\u0027t understand what it\u0027s doing without looking at the binary either. Why would i call every single time an strlen, when it\u0027s never changes? It\u0027s 3.",
+      "parentUuid": "7a288981_9a2b4aeb",
+      "range": {
+        "startLine": 10,
+        "startChar": 6,
+        "endLine": 10,
+        "endChar": 15
+      },
+      "revId": "5bbb768dd62000aefb7995b4ba06ae508758b997",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
