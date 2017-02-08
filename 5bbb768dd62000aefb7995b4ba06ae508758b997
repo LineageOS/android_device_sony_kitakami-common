@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "7a288981_5cf83fe5",
+        "filename": "libshim/Android.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 14719
+      },
+      "writtenOn": "2017-02-08T18:03:18Z",
+      "side": 1,
+      "message": "Is it hurt anything? I don\u0027t think so. C++ is fine there.",
+      "parentUuid": "7a288981_baee06b3",
+      "range": {
+        "startLine": 31,
+        "startChar": 36,
+        "endLine": 31,
+        "endChar": 39
+      },
+      "revId": "5bbb768dd62000aefb7995b4ba06ae508758b997",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "7a288981_9a2b4aeb",
         "filename": "libshim/camera.qcom_shim.cpp",
         "patchSetId": 1
