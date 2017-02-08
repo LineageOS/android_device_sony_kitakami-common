@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7a288981_baee06b3",
+        "filename": "libshim/Android.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2017-02-08T15:37:10Z",
+      "side": 1,
+      "message": "There\u0027s no reason for this to be C++, leave it C please.",
+      "range": {
+        "startLine": 31,
+        "startChar": 36,
+        "endLine": 31,
+        "endChar": 39
+      },
+      "revId": "5bbb768dd62000aefb7995b4ba06ae508758b997",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a288981_9a2b4aeb",
+        "filename": "libshim/camera.qcom_shim.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2017-02-08T15:37:10Z",
+      "side": 1,
+      "message": "return strlen(\"eng\"); instead so people can understand what it is exactly returning without looking at system/core source.",
+      "range": {
+        "startLine": 10,
+        "startChar": 6,
+        "endLine": 10,
+        "endChar": 15
+      },
+      "revId": "5bbb768dd62000aefb7995b4ba06ae508758b997",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
