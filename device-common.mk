@@ -102,7 +102,9 @@ PRODUCT_PACKAGES += \
 
 # RIL
 PRODUCT_PACKAGES += \
-    libxml2
+    libxml2 \
+    ims \
+    ims-common
 
 # TimeKeep
 PRODUCT_PACKAGES += \
@@ -110,7 +112,7 @@ PRODUCT_PACKAGES += \
     TimeKeep
 
 # Shim libs
-PRODUCT_PACKAGES += libgui_shim camera.qcom_shim
+PRODUCT_PACKAGES += libgui_shim camera.qcom_shim lib-imsvt_shim
 
 # Wlan
 PRODUCT_PACKAGES += macaddrsetup
