@@ -12,5 +12,5 @@ allow tad trim_area_partition_device:blk_file rw_file_perms;
 allow tad block_device:dir search;
 allow tad tmpfs:file rw_file_perms;
 type_transition tad socket_device:sock_file tad_socket "tad";
-
+allow tad rootfs:file entrypoint;
 

@@ -564,12 +564,13 @@ service adsprpcd /system/bin/adsprpcd
    group media drmrpc
 
 # SONY misc
-service tad_static /system/bin/tad_static /dev/block/bootdevice/by-name/TA 0,16
+service tad_static /sbin/tad_static /dev/block/bootdevice/by-name/TA 0,16
     class core
     user tad
     group tad root
     socket tad stream 0660 system trimarea
     writepid /dev/cpuset/system-background/tasks
+    seclabel u:r:tad:s0
 
 # SONY misc
 service ta_qmi_service /system/bin/ta_qmi_service
