@@ -564,7 +564,7 @@ service adsprpcd /system/bin/adsprpcd
    group media drmrpc
 
 # SONY misc
-service tad_static /system/bin/tad_static /dev/block/bootdevice/by-name/TA 0,16
+service tad_static /sbin/tad_static /dev/block/bootdevice/by-name/TA 0,16
     class core
     user tad
     group tad root
