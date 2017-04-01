@@ -1,0 +1,5 @@
+# CM hardware
+BOARD_USES_CYANOGEN_HARDWARE := true
+
+# Lights
+TARGET_PROVIDES_LIBLIGHT := true
