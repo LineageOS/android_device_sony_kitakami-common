@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5a4e6583_4bccf935",
+        "filename": "rootdir/ueventd.qcom.rc",
+        "patchSetId": 12
+      },
+      "lineNbr": 271,
+      "author": {
+        "id": 17392
+      },
+      "writtenOn": "2017-04-16T14:01:48Z",
+      "side": 1,
+      "message": "Please check this paths i dont\u0027t have them on Z5P.",
+      "range": {
+        "startLine": 265,
+        "startChar": 0,
+        "endLine": 271,
+        "endChar": 63
+      },
+      "revId": "7425c2a8502953c02a4fdf762ea7ad2f157d45b3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
