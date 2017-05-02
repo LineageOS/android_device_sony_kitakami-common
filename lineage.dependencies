@@ -18,5 +18,5 @@
   {
     "repository": "android_kernel_sony_msm8994",
     "target_path": "kernel/sony/msm8994"
-  }
+  },
 ]
