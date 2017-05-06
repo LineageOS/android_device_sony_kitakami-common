@@ -54,6 +54,40 @@
     },
     {
       "key": {
+        "uuid": "1a486d77_816512e3",
+        "filename": "SonyOtgSwitch/src/org/lineageos/sonyotgswitch/MainActivity.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2017-05-06T19:45:52Z",
+      "side": 1,
+      "message": "What\u0027s the point of this activity?",
+      "revId": "546b13fd0ec1bd6caf5620e58347a80d4dfe2fbc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a486d77_01536218",
+        "filename": "SonyOtgSwitch/src/org/lineageos/sonyotgswitch/UsbOtgSwitch.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2017-05-06T19:45:52Z",
+      "side": 1,
+      "message": "Why is this static?",
+      "revId": "546b13fd0ec1bd6caf5620e58347a80d4dfe2fbc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "1a486d77_bb5f1b72",
         "filename": "SonyOtgSwitch/src/org/lineageos/sonyotgswitch/UsbOtgSwitch.java",
         "patchSetId": 2
@@ -65,6 +99,40 @@
       "writtenOn": "2017-05-06T08:06:12Z",
       "side": 1,
       "message": "There shouldn\u0027t be a need to use reflection for a system app.",
+      "revId": "546b13fd0ec1bd6caf5620e58347a80d4dfe2fbc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a486d77_e1572601",
+        "filename": "SonyOtgSwitch/src/org/lineageos/sonyotgswitch/UsbOtgSwitch.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2017-05-06T19:45:52Z",
+      "side": 1,
+      "message": "This can be nuked.",
+      "revId": "546b13fd0ec1bd6caf5620e58347a80d4dfe2fbc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a486d77_a1680ebb",
+        "filename": "SonyOtgSwitch/src/org/lineageos/sonyotgswitch/UsbOtgSwitch.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 73,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2017-05-06T19:45:52Z",
+      "side": 1,
+      "message": "mUsbOtg \u003d !mUsbOtg;\nsetSystemProperty(OTG_SWITCH_ENABLED, mUsbOtg ? \"true\" : \"false\");",
       "revId": "546b13fd0ec1bd6caf5620e58347a80d4dfe2fbc",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
