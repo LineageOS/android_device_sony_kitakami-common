@@ -2,6 +2,40 @@
   "comments": [
     {
       "key": {
+        "uuid": "1a486d77_7b51a361",
+        "filename": "SonyOtgSwitch/Android.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 2195
+      },
+      "writtenOn": "2017-05-06T08:07:46Z",
+      "side": 1,
+      "message": "Does this need to be privileged?",
+      "revId": "546b13fd0ec1bd6caf5620e58347a80d4dfe2fbc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a486d77_5b4ee7c2",
+        "filename": "SonyOtgSwitch/AndroidManifest.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 2195
+      },
+      "writtenOn": "2017-05-06T08:07:46Z",
+      "side": 1,
+      "message": "What is this used for?",
+      "revId": "546b13fd0ec1bd6caf5620e58347a80d4dfe2fbc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "1a486d77_bb5f1b72",
         "filename": "SonyOtgSwitch/src/org/lineageos/sonyotgswitch/UsbOtgSwitch.java",
         "patchSetId": 2
