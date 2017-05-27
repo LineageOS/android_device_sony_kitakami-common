@@ -1,0 +1,20 @@
+# mount point    fstype    device            
+
+/boot            emmc      /dev/block/bootdevice/by-name/boot		flags=display="Boot "Kernel"";backup=emmc;backup=1;
+/FOTAKernel      emmc      /dev/block/bootdevice/by-name/FOTAKernel	flags=display="FOTAKernel";backup=emmc;backup=1;
+/ta              emmc      /dev/block/bootdevice/by-name/TA		flags=display="TA "Trim-Area"";backup=emmc;backup=1;
+/system          ext4      /dev/block/bootdevice/by-name/system
+/system_image    emmc      /dev/block/bootdevice/by-name/system
+/data            ext4      /dev/block/bootdevice/by-name/userdata	flags=encryptable=footer;length=-16384;retainlayoutversion;
+/cache           ext4      /dev/block/bootdevice/by-name/cache
+/sdcard1         vfat      /dev/block/mmcblk1p1				flags=display="Micro SDcard";storage;wipeingui;removable;
+/usbdisk         auto      /dev/block/sda1	/dev/block/sda		flags=display="USB OTG";storage;wipeingui;removable;
+/firmware        vfat      /dev/block/bootdevice/by-name/modem		flags=display="Firmware";backup=1;
+/appslog         ext4      /dev/block/bootdevice/by-name/apps_log	flags=display="AppsLog";usermrf;backup=1;
+/oem             ext4      /dev/block/bootdevice/by-name/oem		flags=display="OEM";backup=1;
+/persist         ext4      /dev/block/bootdevice/by-name/persist	flags=display="Persist";backup=1;
+/persistent      emmc      /dev/block/bootdevice/by-name/config         flags=display="FRP";backup=emmc;backup=1;
+/lta-label       ext4      /dev/block/bootdevice/by-name/LTALabel	flags=display="LTALabel";backup=1;
+/diag            ext4      /dev/block/bootdevice/by-name/diag		flags=display="Diag";backup=1;
+/modemst1        emmc      /dev/block/bootdevice/by-name/modemst1	flags=display="modemst1 "Baseband"";backup=emmc;backup=1;
+/modemst2        emmc      /dev/block/bootdevice/by-name/modemst2	flags=display="modemst2 "Baseband"";backup=emmc;backup=1;
