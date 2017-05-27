@@ -134,3 +134,8 @@ include device/qcom/sepolicy/sepolicy.mk
 
 BOARD_SEPOLICY_DIRS += \
     $(COMMON_PATH)/sepolicy
+
+# TWRP Support (Optional)
+ifeq ($(WITH_TWRP),true)
+-include $(COMMON_PATH)/twrp/twrp.mk
+endif
