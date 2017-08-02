@@ -4,7 +4,9 @@
 
 /dev/block/bootdevice/by-name/system       /system         ext4 ro,barrier=1                                                                 wait
 /dev/block/bootdevice/by-name/userdata     /data           ext4 nosuid,nodev,barrier=1                                                       wait,encryptable=footer
+/dev/block/bootdevice/by-name/userdata     /data           f2fs rw,discard,nosuid,nodev,noatime,inline_xattr                                 wait,check,encryptable=footer
 /dev/block/bootdevice/by-name/cache        /cache          ext4 nosuid,nodev,barrier=1                                                       wait
+/dev/block/bootdevice/by-name/cache        /cache          f2fs rw,discard,nosuid,nodev,noatime,inline_xattr                                 wait
 /dev/block/bootdevice/by-name/modem        /firmware       vfat ro,shortname=lower,uid=1000,gid=1000,dmask=222,fmask=222,context=u:object_r:firmware_file:s0                     wait
 /dev/block/bootdevice/by-name/persist      /persist        ext4 nosuid,nodev,barrier=1,data=ordered,nodelalloc,nomblk_io_submit,errors=panic wait,notrim
 /dev/block/bootdevice/by-name/config       /persistent     emmc defaults                                                                     defaults
