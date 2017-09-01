@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ce78e77e_f08b9af3",
+        "filename": "twrp/rootdir/init.recovery.qcom.rc",
+        "patchSetId": 5
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 9392
+      },
+      "writtenOn": "2017-09-01T08:56:26Z",
+      "side": 1,
+      "message": "Whitespace",
+      "range": {
+        "startLine": 11,
+        "startChar": 0,
+        "endLine": 11,
+        "endChar": 4
+      },
+      "revId": "13a2d19aee76db99def41342e93b8c09edb966e9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
