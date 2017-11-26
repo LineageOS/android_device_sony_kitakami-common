@@ -37,6 +37,24 @@
     },
     {
       "key": {
+        "uuid": "935b5c98_874f9bc2",
+        "filename": "configs/flashled_calc_parameters.cfg",
+        "patchSetId": 2
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 11608
+      },
+      "writtenOn": "2017-11-26T17:52:31Z",
+      "side": 1,
+      "message": "Ah, good to know! If it works even better, it\u0027s fine by me. :D",
+      "parentUuid": "46108ff7_0604f127",
+      "revId": "dcd136e6ae9f08223ad1a3777bd7b04fa9f80368",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "0e1206a3_86edfbc1",
         "filename": "system.prop",
         "patchSetId": 2
