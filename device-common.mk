@@ -171,6 +171,10 @@ PRODUCT_PACKAGES += \
    camera.qcom_shim \
    libgui_shim
 
+# Thermal management
+PRODUCT_PACKAGES += \
+    thermanager
+
 # TimeKeep
 PRODUCT_PACKAGES += \
     timekeep \
