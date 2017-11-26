@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9f0af9fb_df4c121b",
+        "filename": "configs/flashled_calc_parameters.cfg",
+        "patchSetId": 2
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 11608
+      },
+      "writtenOn": "2017-11-26T17:15:41Z",
+      "side": 1,
+      "message": "This and the next value are different on suzuran",
+      "revId": "dcd136e6ae9f08223ad1a3777bd7b04fa9f80368",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "0e1206a3_86edfbc1",
+        "filename": "system.prop",
+        "patchSetId": 2
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 11608
+      },
+      "writtenOn": "2017-11-26T17:15:41Z",
+      "side": 1,
+      "message": "Device specific",
+      "revId": "dcd136e6ae9f08223ad1a3777bd7b04fa9f80368",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "17d3b27d_ee7f3d66",
+        "filename": "system.prop",
+        "patchSetId": 2
+      },
+      "lineNbr": 127,
+      "author": {
+        "id": 11608
+      },
+      "writtenOn": "2017-11-26T17:15:41Z",
+      "side": 1,
+      "message": "Device specific",
+      "revId": "dcd136e6ae9f08223ad1a3777bd7b04fa9f80368",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
