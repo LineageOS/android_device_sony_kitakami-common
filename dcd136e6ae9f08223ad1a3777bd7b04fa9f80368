@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "46108ff7_0604f127",
+        "filename": "configs/flashled_calc_parameters.cfg",
+        "patchSetId": 2
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 9392
+      },
+      "writtenOn": "2017-11-26T17:31:28Z",
+      "side": 1,
+      "message": "That\u0027s because Nickolay changed them at some point (he wanted a brighter flash LED) - but you\u0027re right, this was never documented properly and done during the initial bringup (private repos) - this is the commit: https://hastebin.com/coduyixupi.diff\n\nI can revert it nevertheless if you want me to :)",
+      "parentUuid": "9f0af9fb_df4c121b",
+      "revId": "dcd136e6ae9f08223ad1a3777bd7b04fa9f80368",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "0e1206a3_86edfbc1",
         "filename": "system.prop",
         "patchSetId": 2
@@ -36,6 +54,24 @@
     },
     {
       "key": {
+        "uuid": "93002f86_ccf47c7b",
+        "filename": "system.prop",
+        "patchSetId": 2
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 9392
+      },
+      "writtenOn": "2017-11-26T17:31:28Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "0e1206a3_86edfbc1",
+      "revId": "dcd136e6ae9f08223ad1a3777bd7b04fa9f80368",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "17d3b27d_ee7f3d66",
         "filename": "system.prop",
         "patchSetId": 2
@@ -47,6 +83,24 @@
       "writtenOn": "2017-11-26T17:15:41Z",
       "side": 1,
       "message": "Device specific",
+      "revId": "dcd136e6ae9f08223ad1a3777bd7b04fa9f80368",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "f0a89f7f_3d0847a7",
+        "filename": "system.prop",
+        "patchSetId": 2
+      },
+      "lineNbr": 127,
+      "author": {
+        "id": 9392
+      },
+      "writtenOn": "2017-11-26T17:31:28Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "17d3b27d_ee7f3d66",
       "revId": "dcd136e6ae9f08223ad1a3777bd7b04fa9f80368",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
