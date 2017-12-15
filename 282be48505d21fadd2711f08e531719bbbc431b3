@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "17d06541_521961e6",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 4
+      },
+      "lineNbr": 87,
+      "author": {
+        "id": 9392
+      },
+      "writtenOn": "2017-12-15T20:25:19Z",
+      "side": 1,
+      "message": "Moved back to device tree",
+      "parentUuid": "0a1cc088_b71afbea",
+      "range": {
+        "startLine": 87,
+        "startChar": 0,
+        "endLine": 87,
+        "endChar": 79
+      },
+      "revId": "282be48505d21fadd2711f08e531719bbbc431b3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "767bf036_22a777f5",
         "filename": "cmhw/HighTouchSensitivity.java",
         "patchSetId": 4
@@ -48,6 +72,53 @@
     },
     {
       "key": {
+        "uuid": "fccd876f_4dc0f68f",
+        "filename": "cmhw/HighTouchSensitivity.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 9392
+      },
+      "writtenOn": "2017-12-15T20:25:19Z",
+      "side": 1,
+      "message": "Moved back to device tree",
+      "parentUuid": "767bf036_22a777f5",
+      "range": {
+        "startLine": 25,
+        "startChar": 0,
+        "endLine": 25,
+        "endChar": 88
+      },
+      "revId": "282be48505d21fadd2711f08e531719bbbc431b3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "6cf99c28_56f24b0e",
+        "filename": "device-common.mk",
+        "patchSetId": 4
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 9392
+      },
+      "writtenOn": "2017-12-15T20:25:19Z",
+      "side": 1,
+      "message": "Moved to radio.mk",
+      "range": {
+        "startLine": 36,
+        "startChar": 4,
+        "endLine": 36,
+        "endChar": 125
+      },
+      "revId": "282be48505d21fadd2711f08e531719bbbc431b3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ccbefb8c_6fc7f66e",
         "filename": "device-common.mk",
         "patchSetId": 4
@@ -59,6 +130,30 @@
       "writtenOn": "2017-11-26T19:01:51Z",
       "side": 1,
       "message": "We don\u0027t have flash led on karin and karin_windy (but should not be a big problem to commonize, it will just be an unused file for us)",
+      "range": {
+        "startLine": 89,
+        "startChar": 0,
+        "endLine": 89,
+        "endChar": 18
+      },
+      "revId": "282be48505d21fadd2711f08e531719bbbc431b3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "4e5f67c8_aa61b8f8",
+        "filename": "device-common.mk",
+        "patchSetId": 4
+      },
+      "lineNbr": 89,
+      "author": {
+        "id": 9392
+      },
+      "writtenOn": "2017-12-15T20:25:19Z",
+      "side": 1,
+      "message": "Yeah, I think we can keep it here",
+      "parentUuid": "ccbefb8c_6fc7f66e",
       "range": {
         "startLine": 89,
         "startChar": 0,
@@ -94,6 +189,30 @@
     },
     {
       "key": {
+        "uuid": "c6f33645_9c8837f9",
+        "filename": "overlay/frameworks/base/core/res/res/values/config.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 9392
+      },
+      "writtenOn": "2017-12-15T20:25:19Z",
+      "side": 1,
+      "message": "Moved to overlay-radio",
+      "parentUuid": "087c512e_ac57f8cf",
+      "range": {
+        "startLine": 30,
+        "startChar": 0,
+        "endLine": 37,
+        "endChar": 49
+      },
+      "revId": "282be48505d21fadd2711f08e531719bbbc431b3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9ef30ea1_274806ff",
         "filename": "overlay/frameworks/base/core/res/res/values/config.xml",
         "patchSetId": 4
@@ -105,6 +224,30 @@
       "writtenOn": "2017-11-26T19:01:51Z",
       "side": 1,
       "message": "1 and 7 only for karin_windy",
+      "range": {
+        "startLine": 80,
+        "startChar": 0,
+        "endLine": 84,
+        "endChar": 22
+      },
+      "revId": "282be48505d21fadd2711f08e531719bbbc431b3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ae6a2227_71e82908",
+        "filename": "overlay/frameworks/base/core/res/res/values/config.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 84,
+      "author": {
+        "id": 9392
+      },
+      "writtenOn": "2017-12-15T20:25:19Z",
+      "side": 1,
+      "message": "Same",
+      "parentUuid": "9ef30ea1_274806ff",
       "range": {
         "startLine": 80,
         "startChar": 0,
@@ -133,6 +276,53 @@
         "startChar": 0,
         "endLine": 198,
         "endChar": 19
+      },
+      "revId": "282be48505d21fadd2711f08e531719bbbc431b3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "0b64a4ae_72bae73c",
+        "filename": "overlay/frameworks/base/core/res/res/values/config.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 198,
+      "author": {
+        "id": 9392
+      },
+      "writtenOn": "2017-12-15T20:25:19Z",
+      "side": 1,
+      "message": "Same",
+      "parentUuid": "5b041761_585f9539",
+      "range": {
+        "startLine": 183,
+        "startChar": 0,
+        "endLine": 198,
+        "endChar": 19
+      },
+      "revId": "282be48505d21fadd2711f08e531719bbbc431b3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "2b3d4a35_d7f061d8",
+        "filename": "system.prop",
+        "patchSetId": 4
+      },
+      "lineNbr": 100,
+      "author": {
+        "id": 9392
+      },
+      "writtenOn": "2017-12-15T20:25:19Z",
+      "side": 1,
+      "message": "Moved to radio.mk",
+      "range": {
+        "startLine": 72,
+        "startChar": 0,
+        "endLine": 100,
+        "endChar": 20
       },
       "revId": "282be48505d21fadd2711f08e531719bbbc431b3",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
