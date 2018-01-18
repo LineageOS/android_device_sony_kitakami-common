@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1fee902a_0e62a3b3",
+        "filename": "overlay/frameworks/base/core/res/res/values/config.xml",
+        "patchSetId": 6
+      },
+      "lineNbr": 99,
+      "author": {
+        "id": 14646
+      },
+      "writtenOn": "2018-01-18T16:49:21Z",
+      "side": 1,
+      "message": "For karin_windy and karin we reduced this value to 5 because 10 is a bit too much at night. Since this setting will fall here, can someone try if it\u0027s ok on the phones (ivy, ...) to reduce it too?",
+      "range": {
+        "startLine": 99,
+        "startChar": 0,
+        "endLine": 99,
+        "endChar": 70
+      },
+      "revId": "db636b3951d7e728e6df61a1040686dbb0b261f1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
