@@ -153,6 +153,24 @@ bin/pm-service
 vendor/lib64/libperipheral_client.so
 vendor/lib/libperipheral_client.so
 
+# Secd
+bin/secd
+bin/iddd
+lib/lib_asb_tee.so
+lib/libcredential-manager-service.so
+lib/libdevice_security.so
+lib/libplstorage.so
+lib/libsuntory.so
+lib/libsuntory_utils.so
+lib64/lib-preload64.so|7c5582e9df7dfd98b70814b3792429b2d9a0231b
+lib64/lib_asb_tee.so
+lib64/libcredential-manager-service.so
+lib64/libdevice_security.so
+lib64/libplstorage.so
+lib64/libsuntory.so
+lib64/libsuntory_utils.so
+lib64/libtee.so
+
 # Security firmware
 etc/firmware/tzdtcpkctl.b00
 etc/firmware/tzdtcpkctl.b01
