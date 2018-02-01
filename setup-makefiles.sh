@@ -42,6 +42,13 @@ write_headers "ivy karin karin_windy sumire suzuran"
 # The standard common blobs
 write_makefiles "$MY_DIR"/proprietary-files.txt
 
+printf '\n' >> "$PRODUCTMK"
+printf 'ifneq ($(BOARD_HAVE_RADIO),false)\n' >> "$PRODUCTMK"
+
+write_makefiles "$MY_DIR"/proprietary-files-radio.txt
+
+printf 'endif\n' >> "$PRODUCTMK"
+
 # We are done!
 write_footers
 
